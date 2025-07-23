@@ -16,7 +16,7 @@ variable "public_key_path" {
 }
 
 variable "ami_id" {
-  default = "ami-0e001c9271cf7f3b9" # Ubuntu 22.04 LTS (¼­¿ï)
+  default = "ami-04cebc8d6c4f297a3" # Ubuntu 22.04 LTS (Seoul)
 }
 
 variable "instance_type" {
