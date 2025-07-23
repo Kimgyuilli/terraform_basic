@@ -61,7 +61,7 @@ resource "aws_instance" "spring_server" {
   vpc_security_group_ids      = [aws_security_group.app_sg.id]
   associate_public_ip_address = true
 
-  user_data = file("${path.module}/scripts/user_data.sh")
+  user_data_base64 = filebase64("${path.module}/scripts/user_data.sh")
 
   tags = {
     Name = "terraform-spring-server"
